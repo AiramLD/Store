@@ -1,0 +1,16 @@
+{
+    "name": "airam/store",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Airam\\Store\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AiramLD",
+            "email": "airamluisdiaz629@gmail.com"
+        }
+    ],
+    "require": {}
+}
