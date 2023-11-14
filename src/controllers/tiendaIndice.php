@@ -29,24 +29,20 @@ $tiendaVirtual->añadirElemento(new Perecedero("Champu para calvos", 0.99, "Calv
 
 // 3 eventos: uno caducado, otro que caduque hoy y otro que caduque en unos meses.
 $proximaFecha = (clone $hoy)->modify('+3 months')->format('Y-m-d');
-$tiendaVirtual->añadirElemento(new Evento("Efectos especiales - Festival", 2500.00, "2023-11-05"));
-$tiendaVirtual->añadirElemento(new Evento("Mantenimiento de servidores", 350.00, $eventoHoy));
-$tiendaVirtual->añadirElemento(new Evento("Instalación y configuración web", 1250.00, $proximaFecha));
+$tiendaVirtual->añadirElemento(new Evento("Cathering de boda", 55000.00, "2015-07-015"));
+$tiendaVirtual->añadirElemento(new Evento("Soborno para aprobar", 55550.00, $eventoHoy));
+$tiendaVirtual->añadirElemento(new Evento("Terminar trabajo", 10000000.00, $proximaFecha));
 
 // 2 servicios por sesiones: uno al que le quedan pocas sesiones y otro al que no le queda ninguna.
-
-$tiendaVirtual->añadirElemento(new Sesiones("Clases Muay Thai", 45.00, 25));
-$tiendaVirtual->añadirElemento(new Sesiones("Programación BackEnd FreeLancer", 1500.00, 40));
+$tiendaVirtual->añadirElemento(new Sesiones("Clases de jazz", 500.00, 7));
+$tiendaVirtual->añadirElemento(new Sesiones("Clases de guitarra", 80.00, 0));
 
 // 2 servicios mixtos: uno caducado y otro no.
+$tiendaVirtual->añadirElemento(new Mixto("Vivir", 10.00, "2022-04-03", 17));
+$proximaFecha = (clone $hoy)->modify('+9 months')->format('Y-m-d');
 
-$tiendaVirtual->añadirElemento(new Mixto("Desarrollo Web", 1880.00, "2023-11-08", 35));
-
-$proximaFecha = (clone $hoy)->modify('+5 months')->format('Y-m-d');
-
-$tiendaVirtual->añadirElemento(new Mixto("Academia Certificado Inglés C1", 600.00, $proximaFecha, 50));
+$tiendaVirtual->añadirElemento(new Mixto("Graduado en DAW", 600.00, $proximaFecha, 70));
 
 // 2 servicios normales.
-
-$tiendaVirtual->añadirElemento(new Normal("Servicio de limpieza", 200.00));
-$tiendaVirtual->añadirElemento(new Normal("Servicio de gestión", 650.00));
+$tiendaVirtual->añadirElemento(new Normal("Profesora particular", 20.00));
+$tiendaVirtual->añadirElemento(new Normal("Chofer particular", 60.00));

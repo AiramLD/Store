@@ -2,7 +2,7 @@
 
 require '../../vendor/autoload.php';
 
-require '../controllers/base-Tienda.php';
+require '../controllers/tiendaIndice.php';
 
 if (isset($_GET['filtro'])) {
     $filtro = $_GET['filtro'];
